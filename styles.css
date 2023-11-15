@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&display=swap");
+
+
+/* Reset some default styles */
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: linear-gradient(to bottom, #5d0eab 0%, #9b5fb0 100%);
+    font-family: 'Arial', sans-serif;
+    color: #020202;
+}
+
+
+
+/* Make the page full-screen */
+html, body {
+    height: 100%;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    height: 100vh;
+    }
+
+
+
+.intro-video video {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+}
+
+.intro-video h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.intro-video p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #fbfcfc;
+}
+
+/* About Section styles */
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.about img {
+    max-width: 10%;
+    border-radius: 10%; /* Make the image round */
+}
+
+/* Skills Section styles */
+.skills {
+    
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.skill {
+    width: 45%; /* Adjust the width as needed */
+    background-color: #fffefe;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills h2 {
+    color: #000000;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+
+
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: #eceff1;
+  }
+  .projects-section-header {
+    max-width: 640px;
+    text-align: center;
+    margin: 3rem auto 6rem auto;
+    border-bottom: 0 solid white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 38px;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+    box-shadow: 0 5px 20px #323232;
+  }
+  @media (max-width: 28.75em) {
+    .projects-section-header {
+      font-size: 4rem;
+    }
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  @media (max-width: 30.625em) {
+    .projects-section {
+      padding: 6rem 1rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .project {
+    background: #ca8da7;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 28px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+    transition: all 2s, transform 0.5s, box_shadow 0.5s;
+  }
+  .project:hover {
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
+    transform: scale(1.08);
+  }
+  
+  .project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 28px;
+    border-top-left-radius: 28px;
+  }
+  .project-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0.5rem;
+    color: #070707;
+    text-transform: uppercase;
+  }
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+  }
+
+/* Resume Section styles */
+.resume {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.resume a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+}
+
+/* Contact Section styles */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    color: #333;
+}
+
+.contact p {
+    color: #777;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #dad1d1;
+}
+
+
+
+/* Add this style for the pop-up shadow box effect */
+.about-content {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Set the box shadow color and size as needed */
+    padding: 20px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+}
+
+.about:hover .about-content {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adjust the box shadow on hover */
+}
+
+
+
+
+
+
